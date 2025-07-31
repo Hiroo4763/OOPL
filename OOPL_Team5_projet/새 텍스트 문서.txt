@@ -1,0 +1,52 @@
+1.  아래 내용의 목적
+-복사생성자 함수
+-클래스 static 멤버
+
+2. 포인터 개념
+int a[5]={1,2,3,4,5}
+Int *p=a
+Int *q=&a[2]
+
+p,q,*p,*q 값은?
+
+3. 다중 함수
+ex) a(),a(int x),a(int x, int y)
+
+4. 객체 포인터변수
+
+1) 객체 포인터변수 p선언 코드
+Rect *p=p
+2) 포인터변수 p에 객체 r 주소 넣는 코드
+p=&r
+3) 포인터 변수 p 사용하여 객체 r의 폭과 넓이 구하기
+cout<<p.getwidth<<','<<p.getheight<<endl
+
+5. 클래스에 동적 배열 
+1)포인터 사용하여 n개의 Circle 배열 할당 코드
+Circle *pArray[n]
+2) 1)의 값 반환하는 코드
+
+6. void f() 디폴트 매개 변수 사용하여 구현하기
+
+void f( char c=' ', int line=1)
+{
+      for(int i=0; i<line; i++)
+      { for(int j=0; j<10; j++)
+         {  cout<<c<<endl;}
+         cout<<'\n'<<endl;
+       }
+}
+
+7. 함수 중복 실패사례
+int add(int x=10, double y=10.0)
+
+1. int add()
+2. int add(10, 3.14)
+3. int add(10)
+4. int add(3.14)
+정답 : 4번 // 매개 변수가 두 개일 경우는 앞에서부터 처리되므로 3.14는 자료형 int와 맞지 않는다.
+
+
+2. int add(
+
+8. 프렌드 함수 사용하는 세 가지
